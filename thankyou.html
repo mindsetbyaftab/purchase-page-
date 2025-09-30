@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Your Ebook is Ready!</title>
+    <style>
+        :root {
+            --accent: #0b74da;
+            --dark: #111;
+            --muted: #666;
+            --card: #fff;
+            --bg: #f6f8fb;
+            --maxw: 900px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #0959a8;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); // 🔹 apna Pixel ID yaha daalo
+        fbq('track', 'Purchase');     // 🔹 ye event sirf ThankYou page pe fire hoga
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=Purchase&noscript=1" />
+    </noscript>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎉 Thank You for Your Purchase!</h1>
+        <p>Your ebook is ready to download. We’ve also sent details to your email (if provided).</p>
+        <a href="YOUR_EBOOK_DOWNLOAD_LINK" class="download-btn" download>
+            📥 Download Ebook
+        </a>
+        <div class="footer">Need help? Contact us anytime.</div>
+    </div>
+</body>
+
+</html>
