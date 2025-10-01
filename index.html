@@ -26,6 +26,7 @@
             margin: 0;
             background: var(--bg);
             color: var(--dark);
+            line-height: 1.5;
         }
 
         .wrap {
@@ -45,7 +46,8 @@
         header {
             display: flex;
             gap: 16px;
-            align-items: center
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .logo {
@@ -64,8 +66,10 @@
         }
 
         .cover {
-            width: 450px;
-            height: 270px;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 8px;
         }
 
         .cover1 {
@@ -105,7 +109,8 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            margin-top: 12px
+            margin-top: 12px;
+            text-align: center;
         }
 
         .small {
@@ -157,17 +162,6 @@
             font-size: 13px
         }
 
-        @media(max-width:880px) {
-            .grid {
-                grid-template-columns: 1fr
-            }
-
-            .logo {
-                width: 52px;
-                height: 52px
-            }
-        }
-
         .policy {
             text-align: center;
             padding: 24px 16px;
@@ -185,13 +179,45 @@
         .policy a:hover {
             color: blue;
         }
+
+        /* ✅ Mobile Responsive Fixes */
+        @media(max-width:880px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-mind {
+                width: 52px;
+                height: 52px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .cols {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .price {
+                font-size: 22px;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
     </style>
     <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
