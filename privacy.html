@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -13,26 +14,92 @@
       --bg: #f6f8fb;
       --maxw: 900px;
     }
-    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--dark);display:flex;justify-content:center;padding:40px 16px;}
-    .card{max-width:var(--maxw);background:var(--card);padding:28px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.06);}
-    h1{color:var(--accent);margin:0 0 12px;font-size:1.6rem}
-    h2{margin:18px 0 8px;font-size:1.05rem}
-    p,li{color:var(--muted);line-height:1.6}
-    ul{padding-left:18px}
-    .foot{margin-top:20px;font-size:0.9rem;color:var(--muted)}
-    a{color:var(--accent);text-decoration:none}
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .card {
+      max-width: var(--maxw);
+      background: var(--card);
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      color: var(--accent);
+      margin: 0 0 12px;
+      font-size: 1.6rem
+    }
+
+    h2 {
+      margin: 18px 0 8px;
+      font-size: 1.05rem
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    ul {
+      padding-left: 18px
+    }
+
+    .foot {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--muted)
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none
+    }
   </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '688423023572060');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=688423023572060&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
+
 <body>
   <div class="card">
     <h1>Privacy Policy</h1>
 
-    <p><strong>mindsetbyaftab</strong> ("we", "us", "our") is committed to protecting your privacy. This policy explains what data we collect, how we use it and your rights.</p>
+    <p><strong>mindsetbyaftab</strong> ("we", "us", "our") is committed to protecting your privacy. This policy explains
+      what data we collect, how we use it and your rights.</p>
 
     <h2>1. Information We Collect</h2>
     <ul>
-      <li><strong>Personal Information:</strong> name, email address, phone number (if provided during purchase or contact).</li>
-      <li><strong>Payment Data:</strong> transaction details processed by our payment partner. We do not store full card details on our servers.</li>
+      <li><strong>Personal Information:</strong> name, email address, phone number (if provided during purchase or
+        contact).</li>
+      <li><strong>Payment Data:</strong> transaction details processed by our payment partner. We do not store full card
+        details on our servers.</li>
       <li><strong>Usage Data:</strong> analytics and cookies to monitor and improve website performance.</li>
     </ul>
 
@@ -45,16 +112,21 @@
     </ul>
 
     <h2>3. Cookies & Tracking</h2>
-    <p>We use cookies and third-party trackers (e.g. Meta Pixel, Google Analytics) to better understand user behavior and optimize ads. You can control cookies through your browser settings.</p>
+    <p>We use cookies and third-party trackers (e.g. Meta Pixel, Google Analytics) to better understand user behavior
+      and optimize ads. You can control cookies through your browser settings.</p>
 
     <h2>4. Data Security</h2>
-    <p>We take reasonable technical and organizational measures to protect your data. However no method of transmission over the internet is 100% secure.</p>
+    <p>We take reasonable technical and organizational measures to protect your data. However no method of transmission
+      over the internet is 100% secure.</p>
 
     <h2>5. Sharing Your Data</h2>
-    <p>We may share limited information with service providers (payment processors, email platforms, analytics providers) strictly to deliver our services. We do not sell personal data to third parties.</p>
+    <p>We may share limited information with service providers (payment processors, email platforms, analytics
+      providers) strictly to deliver our services. We do not sell personal data to third parties.</p>
 
     <h2>6. Your Rights</h2>
-    <p>You may request access, correction or deletion of your personal data by contacting us at <a href="mailto:mindsetbyaftab@gmail.com">mindsetbyaftab@gmail.com</a>. We will respond within a reasonable time.</p>
+    <p>You may request access, correction or deletion of your personal data by contacting us at <a
+        href="mailto:mindsetbyaftab@gmail.com">mindsetbyaftab@gmail.com</a>. We will respond within a reasonable time.
+    </p>
 
     <h2>7. Changes to This Policy</h2>
     <p>We may update this policy occasionally. The latest version will be posted on this page with a revised date.</p>
@@ -65,4 +137,5 @@
     </div>
   </div>
 </body>
+
 </html>
