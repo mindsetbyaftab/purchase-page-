@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy — YOUR_BRAND_NAME</title>
+  <title>Privacy Policy — Mindset by Aftab</title>
+  <link rel="stylesheet" href="/style.css">
   <style>
-    :root {
+    /* :root {
       --accent: #0b74da;
       --dark: #111;
       --muted: #666;
       --card: #fff;
       --bg: #f6f8fb;
       --maxw: 900px;
-    }
+    }*/
 
-    body {
+    /* body {
       margin: 0;
       font-family: Inter, system-ui, Arial, sans-serif;
       background: var(--bg);
@@ -23,7 +24,85 @@
       display: flex;
       justify-content: center;
       padding: 40px 16px;
+      flex-direction: ; 
+      align-items: center;
+    } */
+
+   /*  header {
+      background: var(--card);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      margin-bottom: 20px;
+      width: 100%;
     }
+
+    .navbar {
+      max-width: var(--maxw);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      gap: 20px;
+    }
+
+    .nav-logo img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      font-weight: 500;
+      transition: color 0.3s;
+      color: #0f1724;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    @media(max-width:768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        background: var(--card);
+        width: 200px;
+        border-radius: 10px;
+        padding: 15px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+    }  */
 
     .card {
       max-width: var(--maxw);
@@ -31,22 +110,26 @@
       padding: 28px;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      margin: auto;
+      margin-top: 20px;
     }
 
     h1 {
-      color: var(--accent);
+      color: var(--dark);
       margin: 0 0 12px;
-      font-size: 1.6rem
+      font-size: 1.6rem;
+      text-align: center;
     }
 
     h2 {
       margin: 18px 0 8px;
-      font-size: 1.05rem
+      font-size: 1.05rem;
+      text-align: center;
     }
 
     p,
     li {
-      color: var(--muted);
+      color: var(--dark);
       line-height: 1.6
     }
 
@@ -61,81 +144,99 @@
     }
 
     a {
-      color: var(--accent);
+      color: var(--dark);
       text-decoration: none
     }
-  </style>
 
-  <!-- Meta Pixel Code -->
-  <!-- <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '688423023572060');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=688423023572060&ev=PageView&noscript=1" /></noscript> -->
-  <!-- End Meta Pixel Code -->
+    /* footer {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px 0 0 0;
+      background-color: rgb(243, 243, 241);
+      width: 100%;
+    }
+
+    .policy {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .policy a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.2s ease;
+    }
+
+    .policy a:hover {
+      color: blue;
+    }
+
+    /* ✅ Ad Box Style */
+     .ad-box {
+      background: #f1f3f5;
+      border: 1px dashed #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 30px 0;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+    } 
+  </style>
 </head>
 
 <body>
+  <div id="header"></div>
+
   <div class="card">
     <h1>Privacy Policy</h1>
+    <p><strong>mindsetbyaftab</strong> ("we", "us", "our") is committed to protecting your privacy...</p>
 
-    <p><strong>mindsetbyaftab</strong> ("we", "us", "our") is committed to protecting your privacy. This policy explains
-      what data we collect, how we use it and your rights.</p>
+    <!-- ✅ Top Ad Placeholder -->
+    <div class="ad-box">[ Advertisement Banner — 728x90 / Responsive ]</div>
 
     <h2>1. Information We Collect</h2>
     <ul>
-      <li><strong>Personal Information:</strong> name, email address, phone number (if provided during purchase or
-        contact).</li>
-      <li><strong>Payment Data:</strong> transaction details processed by our payment partner. We do not store full card
-        details on our servers.</li>
+      <li><strong>Personal Information:</strong> name, email address, phone number (if provided).</li>
+      <li><strong>Payment Data:</strong> transaction details processed by our payment partner.</li>
       <li><strong>Usage Data:</strong> analytics and cookies to monitor and improve website performance.</li>
     </ul>
+
+    <!-- ✅ Mid-Content Ad Placeholder -->
+    <div class="ad-box">[ In-Article Ad — 300x250 / Responsive ]</div>
 
     <h2>2. How We Use Your Information</h2>
     <ul>
       <li>To deliver purchased digital products and send transactional emails.</li>
       <li>To process payments and prevent fraud.</li>
-      <li>To send occasional updates, product announcements or promotional offers (you may opt-out anytime).</li>
+      <li>To send occasional updates or offers (you may opt-out anytime).</li>
       <li>To analyze site usage and improve user experience.</li>
     </ul>
 
     <h2>3. Cookies & Tracking</h2>
-    <p>We use cookies and third-party trackers (e.g. Meta Pixel, Google Analytics) to better understand user behavior
-      and optimize ads. You can control cookies through your browser settings.</p>
+    <p>We use cookies and third-party trackers (e.g. Meta Pixel, Google Analytics) to optimize ads.</p>
+
+    <!-- ✅ Another Ad -->
+    <div class="ad-box">[ Responsive Display Ad — auto size ]</div>
 
     <h2>4. Data Security</h2>
-    <p>We take reasonable technical and organizational measures to protect your data. However no method of transmission
-      over the internet is 100% secure.</p>
-
-    <h2>5. Sharing Your Data</h2>
-    <p>We may share limited information with service providers (payment processors, email platforms, analytics
-      providers) strictly to deliver our services. We do not sell personal data to third parties.</p>
-
-    <h2>6. Your Rights</h2>
-    <p>You may request access, correction or deletion of your personal data by contacting us at <a
-        href="mailto:mindsetbyaftab@gmail.com">mindsetbyaftab@gmail.com</a>. We will respond within a reasonable time.
-    </p>
-
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this policy occasionally. The latest version will be posted on this page with a revised date.</p>
+    <p>We take reasonable technical and organizational measures to protect your data...</p>
 
     <div class="foot">
       <p>Contact: <a href="mailto:mindsetbyaftab@gmail.com">mindsetbyaftab@gmail.com</a></p>
       <p>Effective date: 2025-09-22</p>
     </div>
   </div>
+
+  <div id="footer"></div>
+
+ <script src="/script.js"></script>
 </body>
 
 </html>

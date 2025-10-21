@@ -4,33 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Mindset by Aftab</title>
+    <link rel="stylesheet" href="/style.css">
     <style>
-        :root {
+        /* :root {
             --accent: #0b74da;
             --dark: #111;
             --muted: #666;
             --card: #fff;
             --bg: #f6f8fb;
-            --maxw: 900px;
+            --maxw: 1100px;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Inter", Arial, sans-serif;
             background: var(--bg);
             color: var(--dark);
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            line-height: 1.6;
         }
 
+        /* ✅ Navbar Styles */
+        /* header {
+            background: var(--card);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: var(--maxw);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        @media(max-width:768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 65px;
+                right: 20px;
+                background: var(--card);
+                width: 200px;
+                border-radius: 10px;
+                padding: 15px 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+        } */ 
+
+        /* ✅ Page Container */
         .container {
             max-width: var(--maxw);
             background: var(--card);
+            margin-top: 20px;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin: auto;
         }
 
         h1 {
@@ -39,50 +115,75 @@
         }
 
         p {
-            line-height: 1.6;
-            margin-bottom: 15px;
             color: var(--muted);
-        }
-
-        .contact-info {
-            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         .contact-info p {
             margin: 8px 0;
+            color: var(--dark);
         }
 
         a {
-            color: var(--accent);
+            color: var(--dark);
             text-decoration: none;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: var(--accent);
         }
+
+        /* ✅ Footer */
+       /* footer {
+            font-size: 13px;
+            color: var(--muted);
+            text-align: center;
+            margin-top: 24px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            bottom: 0;
+            margin: auto;
+            padding: 100px 0px 0px 0px;
+            background-color: rgb(243, 243, 241);
+        }
+
+        .faq h3 {
+            margin: 10px 0 6px
+        }
+
+        pre.code {
+            background: #0f1724;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            overflow: auto;
+            font-size: 13px
+        }
+
+        .policy {
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .policy a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease;
+        }
+
+        .policy a:hover {
+            color: blue;
+        } */
     </style>
-    <!-- Meta Pixel Code -->
-    <!-- <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '688423023572060');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=688423023572060&ev=PageView&noscript=1" /></noscript> -->
-    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    <!-- ✅ Navbar -->
+   <div id="header"></div>
+
+    <!-- ✅ Contact Section -->
     <div class="container">
         <h1>Contact Us</h1>
         <p>If you have any questions, concerns, or need assistance with your purchase, feel free to reach out to us:</p>
@@ -93,6 +194,11 @@
         </div>
         <p>We usually reply within 24 hours.</p>
     </div>
+
+    <!-- ✅ Footer -->
+     <div id="footer"></div>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>

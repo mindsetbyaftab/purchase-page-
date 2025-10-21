@@ -1,0 +1,20 @@
+<!-- footer.html -->
+<footer>
+  <div class="card" style="background:transparent; box-shadow:none; padding:12px 0;">
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <div><strong>Author:</strong> Aftab Shaikh</div>
+      <div><strong>Copyright:</strong> © <span id="year"></span> <span>Mindsetbyaftab</span></div>
+    </div>
+    <div class="policy">
+      <a href="/terms/" target="_blank">Terms & Condition</a>
+      <a href="/refund/" target="_blank">Refund Policy</a>
+      <a href="/privacy/" target="_blank">Privacy Policy</a>
+      <a href="/shipping/" target="_blank">Shipping Policy</a>
+      <a href="/contact/" target="_blank">Contact us</a>
+    </div>
+  </div>
+</footer>
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
