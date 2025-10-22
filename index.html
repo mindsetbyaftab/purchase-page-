@@ -190,27 +190,69 @@
         }
 
         /* Product Card */
-        .product-card {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background: #f8f8f8;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            /* image aur text ke beech space */
+            background: white;
+            padding: 20px 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 320px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-info {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
+            justify-content: center;
         }
 
-        .product-card .price {
-            color: var(--accent);
-            font-weight: 700;
-            font-size: 22px;
-            margin: 10px 0;
+        .product-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
-        .product-card .btn {
-            background: var(--accent);
-            color: #fff;
-            padding: 12px 20px;
+        .price {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: red;
+            margin-left: 10px;
+        }
+
+        .buy-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
             border-radius: 8px;
-            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
         }
+
+        .buy-btn:hover {
+            background-color: #0056b3;
+        }
+
 
         /* Footer */
         footer {
@@ -261,7 +303,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-logo"><a href="https://www.mindsetbyaftab.shop/"><img src="images/Logo.jpg" alt="Logo"></a></div>
+            <div class="nav-logo"><a href="https://www.mindsetbyaftab.shop/"><img src="images/Logo.jpg" alt="Logo"></a>
+            </div>
             <div class="nav-toggle" id="navToggle">&#9776;</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="https://www.mindsetbyaftab.shop/">Home</a></li>
@@ -283,19 +326,40 @@
         <h2>Latest Blogs</h2>
         <div class="cards">
             <div class="card">
+                <img src="https://picsum.photos/600/350?5" alt="">
                 <h3>How to Stay Motivated Every Day</h3>
                 <p>Practical strategies to stay consistent and positive every day.</p>
                 <a href="blog1.html">Read More →</a>
             </div>
             <div class="card">
+                <img src="https://picsum.photos/600/350?4" alt="">
                 <h3>Building a Growth Mindset</h3>
                 <p>Shift your thinking from fixed to growth mindset for success.</p>
                 <a href="blog2.html">Read More →</a>
             </div>
             <div class="card">
+                <img src="https://picsum.photos/600/350?3" alt="">
                 <h3>Overcoming Procrastination</h3>
                 <p>Effective methods to beat procrastination and get things done efficiently.</p>
                 <a href="blog3.html">Read More →</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/600/350?6" alt="">
+                <h3>Overcoming Procrastination</h3>
+                <p>Effective methods to beat procrastination and get things done efficiently.</p>
+                <a href="blog3.html">Read More →</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/600/350?7" alt="">
+                <h3>Overcoming Procrastination</h3>
+                <p>Effective methods to beat procrastination and get things done efficiently.</p>
+                <a href="blog3.html">Read More →</a>
+            </div>
+            <div class="card">
+                <img src="/images/success.png" alt="">
+                <h3>How to Build an Unstoppable Mindset for Success</h3>
+                <p>Every successful person you admire — from top entrepreneurs to world-class athletes — has....</p>
+                <a href="/blogspost/blog-1.html">Read More →</a>
             </div>
         </div>
     </section>
@@ -305,11 +369,19 @@
         <h2>Most Popular Posts</h2>
         <div class="cards">
             <div class="card">
+                <img src="https://picsum.photos/600/350?1" alt="">
                 <h3>Top 10 Productivity Hacks</h3>
                 <p>Boost your daily output with these proven productivity techniques.</p>
                 <a href="blog4.html">Read More →</a>
             </div>
             <div class="card">
+                <img src="https://picsum.photos/600/350?2" alt="">
+                <h3>Morning Routine for Success</h3>
+                <p>Start your day with energy and focus using this routine.</p>
+                <a href="blog5.html">Read More →</a>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/600/350?9" alt="">
                 <h3>Morning Routine for Success</h3>
                 <p>Start your day with energy and focus using this routine.</p>
                 <a href="blog5.html">Read More →</a>
@@ -320,14 +392,18 @@
     <!-- Product Section -->
     <section>
         <h2>Featured Product</h2>
-        <div class="cards">
-            <div class="card product-card">
-                <img src="images/product1.png" alt="20 Days Dropshipping eBook">
-                <h3>20 Days Dropshipping eBook</h3>
-                <div class="price">₹149 <del style="color:#ff0000;">₹699</del></div>
-                <a class="btn" href="https://rzp.io/rzp/uGrSCdGc">Buy Now</a>
+        <div class="container">
+            <div class="product">
+                <img src="images/Untitled design (1).png" alt="20 Days Dropshipping eBook" class="product-image" />
+
+                <div class="product-info">
+                    <h2>20 Days Dropshipping eBook</h2>
+                    <p><span class="price">₹149</span> <span class="old-price">₹699</span></p>
+                    <button class="buy-btn"><a href="/product/">Buy Now</a></button>
+                </div>
             </div>
         </div>
+
     </section>
 
     <footer>
