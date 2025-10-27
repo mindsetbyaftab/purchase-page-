@@ -82,6 +82,9 @@ header {
   }
 }
 
+body{
+   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
 /* Footer */
 footer {
   font-size: 13px;
