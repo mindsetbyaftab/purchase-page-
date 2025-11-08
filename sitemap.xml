@@ -35,12 +35,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.mindsetbyaftab.shop/refund</loc>
+    <loc>https://www.mindsetbyaftab.shop/refund/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.mindsetbyaftab.shop/shipping</loc>
+    <loc>https://www.mindsetbyaftab.shop/shipping/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -52,7 +52,7 @@
     <priority>0.8</priority>
   </url>
 
-<url>
+  <url>
     <loc>https://www.mindsetbyaftab.shop/blog/Top-7-Proven-Dropshipping-Strategies-for-2025-to-Scale-Fast/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -64,9 +64,10 @@
     <priority>0.8</priority>
   </url>
 
-<url>
+  <url>
     <loc>https://www.mindsetbyaftab.shop/blog/How-to-Earn-Money-from-AI-Tools-in-2025/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
 </urlset>
