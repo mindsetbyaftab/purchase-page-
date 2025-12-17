@@ -123,7 +123,6 @@
                 display: block;
             }
         }
-
         /* Hero Section */
         .hero {
             text-align: center;
@@ -156,7 +155,7 @@
         .card {
             background: var(--card);
             border-radius: 12px;
-            padding: 20px;
+            padding: 18px;
             box-shadow: 0 6px 22px rgba(20, 20, 50, 0.06);
             transition: transform 0.3s;
         }
@@ -187,6 +186,17 @@
             font-weight: 600;
         }
 
+        @media  screen and (max-width:600px) {
+            .hero{
+                padding: 43px;
+            }
+
+            .cards{
+                gap: 71px;
+            }
+            
+            
+        }
         /* Product Card */
         .container {
             display: flex;
@@ -334,6 +344,13 @@
     <section>
         <h2>Latest Blogs</h2>
         <div class="cards">
+             <div class="card">
+                <img src="/images/How to Build a Personal Brand Online in 2025.png" alt="personal brand ">
+                <h3>How to Build a Personal Brand Online in 2025</h3>
+                <p>In 2025, people don’t just follow companies — they follow people. Audiences are more connected to....</p>
+                <a href="/blog/How-to-Build-a-Personal-Brand-Online-in-2025/">Read More →</a>
+            </div>
+
             <div class="card">
                 <img src="/images/Passive Income Ideas in India (2025) Earn More with Less Effort!.png" alt="passive income ideas by aftab">
                 <h3>🔥 Passive Income Ideas in India (2025): Earn More with Less Effort!</h3>
@@ -373,13 +390,6 @@
                     owners
                     who are......</p>
                 <a href="/blog/Top-7-Proven-Dropshipping-Strategies-for-2025-to-Scale-Fast/">Read More →</a>
-            </div>
-
-            <div class="card">
-                <img src="/images/success.png" alt="Mindset Building Image">
-                <h3>How to Build an Unstoppable Mindset for Success</h3>
-                <p>Every successful person you admire — from top entrepreneurs to world-class athletes — has....</p>
-                <a href="/blog/How-to-Build-an-Unstoppable-Mindset-for-Success/">Read More →</a>
             </div>
 
         </div>
